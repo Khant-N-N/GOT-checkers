@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Caveat&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: #efeee6;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: url(./assets/bg_41.jpg);
+  background-repeat: repeat;
+}
+
+#root {
+  width: 100%;
+}
+
+.font-alegreya {
+  font-family: 'Alegreya', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.font-caveat {
+  font-family: 'Caveat', cursive, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.noDisplay {
+  display: none;
+}
+
+
+.house-logo {
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.house-logo:hover {
+  filter: drop-shadow(0 0 1em #efeee6);
+}
+
+.ground {
+  background: url("./assets/ground.jpg");
+  background-size: cover;
+}
+
+.grass {
+  background: url("./assets/ground2.jpg");
+  background-size: cover;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .house-loo {
+    animation: spin infinite 20s linear;
+  }
+}
