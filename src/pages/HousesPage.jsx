@@ -11,8 +11,8 @@ import greyjoyLogo from "../assets/greyjoy.png";
 
 const HousesPage = () => {
   return (
-    <div className=" container mx-auto grid grid-cols-1 md:grid-cols-3 gap-[2rem] py-4">
-      <div className="h-[10rem] flex justify-center">
+    <div className="select-none container mx-auto grid grid-cols-1 md:grid-cols-3 gap-[2rem] py-4">
+      <div className="h-[11rem] flex justify-center">
         <img
           src={baratheonLogo}
           className="house-logo h-full cursor-pointer"
@@ -54,21 +54,21 @@ const HousesPage = () => {
           alt="martell logo"
         />
       </div>
-      <div className="h-[10rem] flex justify-center">
+      <div className="h-[10rem] flex justify-center mt-[1rem]">
         <img
           src={greyjoyLogo}
           className="house-logo h-full cursor-pointer"
           alt="greyjoy logo"
         />
       </div>
-      <div className="h-[8rem] flex justify-center">
+      <div className="h-[8rem] flex justify-center mt-[1.5rem]">
         <img
           src={tullyLogo}
           className="house-logo h-full cursor-pointer"
           alt="tully logo"
         />
       </div>
-      <div className="h-[9rem] flex justify-center">
+      <div className="h-[9rem] flex justify-center mt-[1rem]">
         <img
           src={arrynLogo}
           className="house-logo h-full cursor-pointer"

@@ -21,7 +21,6 @@ function App() {
     if (audioRef.current) {
       audioRef.current.pause();
     }
-    // audioTheme.pause();
   };
   return (
     <>

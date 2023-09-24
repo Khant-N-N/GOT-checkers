@@ -42,19 +42,24 @@ body {
 
 .house-logo {
   will-change: filter;
-  transition: filter 300ms;
+  transition: filter 500ms;
+  cursor: pointer;
 }
 
 .house-logo:hover {
   filter: drop-shadow(0 0 1em #efeee6);
 }
 
-.ground {
-  background: url("./assets/ground.jpg");
+.house-logo:active {
+  transform: scale(1.2);
+}
+
+.black {
+  background: url("./assets/bg_41.jpg");
   background-size: cover;
 }
 
-.grass {
+.white {
   background: url("./assets/ground2.jpg");
   background-size: cover;
 }
