@@ -15,7 +15,6 @@ function App() {
     if (audioRef.current) {
       audioRef.current.play();
     }
-    audioTheme.play();
   };
 
   const handlePause = () => {
